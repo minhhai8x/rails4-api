@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
+  get '/oauth2callback' => 'home#oauth2callback', as: :oauth2callback
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
