@@ -5,8 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+gem 'mysql2', '~> 0.3.20'
+
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -32,7 +35,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'yt', '~> 0.28.0'
+# bootstrap
+gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.3.7'
+
+gem 'slim-rails'
+
+gem 'google-api-client', '>0.7'
+gem 'signet'
+
+gem "paperclip", "~> 5.0.0"
+
+gem 'ffaker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,5 +59,8 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'bootstrap-generators'
+  gem 'rails_layout'
 end
 

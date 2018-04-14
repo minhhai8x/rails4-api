@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
 
+  post '/upload' => 'home#upload', as: :upload_image
+
   get '/oauth2callback' => 'home#oauth2callback', as: :oauth2callback
 
   # The priority is based upon order of creation: first created -> highest priority.

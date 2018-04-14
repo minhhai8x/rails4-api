@@ -1,0 +1,12 @@
+= link_to 'Oauth2', @oauth2_uri
+
+= form_for(@user, url: upload_image_path) do |f|
+  .form-group
+    label for="name"
+      | Name
+    = f.text_field :name
+  .form-group
+    label for="avatar"
+      | Avatar
+    = f.file_field :avatar
+  button.btn.btn-primary type="submit" Submit
